@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<style>
+	
+	/* Button used to open the contact form - fixed at the bottom of the page  */
+.open-button {
+  background-color: #337ab7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 150px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+	
+	.container{
+	background-color:#ffffff;
+	
+	}
+	
+	#heading1{
+	font-style:italic;
+	font-size:20px;
+	}
+	
+	.open-button{
+	background-color: #ff4d4d;
+	color:#ffffff;
+	}
+	
+	.btn cancel{
+	background-color:#ff4d4d;
+	color:#ffffff;
+	}
+	
+	.fa-linkedin {
+  background: #007bb5;
+  color: white;}
+  
+    #about, #skills, #Experience, #education{
+	background-color:#fffff;
+	border-bottom:1px solid #d3d3d3;
+	
+	
+	}
+    
+	#about:hover, #skills:hover, #Experience:hover, #education:hover{
+	background-color:#d3d3d3;
+	border:1px solid #d3d3d3;
+	}
+	
+	html {
+    scroll-behavior: smooth;
+    }
+	
+	#section1{
+		 border: 1px solid #dedede;
+         height:400px;
+         box-shadow: 5px 5px 5px 5px #dedede;
+		  background-image:linear-gradient(180deg, #000000,#e0ffff );
+		  color:#ffffff;
+		  margin-top:20px;
+		  width:100%;
+        
+	}
+
+	.h3{
+	text-align:center;
+	
+	}
+	
+	.h2{
+	text-align:center;
+	}
+	
+	#section2{
+	     border: 1px solid #dedede;
+		 background-image: linear-gradient(180deg, #e0ffff,#ffffff ); 
+		 box-shadow: 5px 5px 5px 5px #dedede;
+		height:650px;
+	}
+	
+	#section3{
+	     border: 1px solid #dedede;
+		 background-image: linear-gradient(180deg, #ffffff, #e0ffff); 
+		 box-shadow: 5px 5px 5px 5px #dedede;
+		height:650px;
+	}
+	
+	#section4{
+	     border: 1px solid #dedede;
+		 background-image: linear-gradient(180deg, #ffffff, #e0ffff); 
+		 box-shadow: 5px 5px 5px 5px #dedede;
+		height:1000px;
+	}
+	.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:50px;
+}
+   
+   ul.a {
+  list-style-type: circle;
+  }
+  
+  ul.b {
+  list-style-type: square;
+  font-weight: bold;
+}
+  
+  .footer1{
+  overflow: hidden;
+  position:fixed;
+   width: 100%;
+   bottom:0px;
+    background-color: #ffffff;
+	text-align:center;
+   
+  }
+	</style>
+	
+	</head>
+    <body>
+	
+	<div class="container">
+	  
+    </div>
+	
+	<div class="container visible-lg visible-xs">   
+       <div class=col-xs-12>
+	  <div class="navbar">
+        <div id="heading1" style="float:left; font-size:18px; margin-right:450px; color:black;"><b>Sreeranjani &nbsp;</b></div>
+	    <div id="about" style="float:left; font-size:17px; "><a href="#section1" style="color:black;"><b>About Me</b></a> &nbsp; &nbsp;</div> 
+		 <div id="Experience" style="float:left; font-size:17px; "><a href="#section2" style="color:black;"><b>Experience</b></a> &nbsp; &nbsp;</div>
+         <div id="education" style="float:left; font-size:17px; "><a href="#section3" style="color:black;"><b>Education</b></a> &nbsp; &nbsp;</div>
+		 
+		<div id="skills" style="float:left; font-size:17px;"> <a href="#section4" style="color:black;"><b>Skills</b></a> &nbsp; &nbsp;</div>
+	   </div>	   
+    </div>
+	<br/>
+	<button class="open-button" onclick="openForm()">Get in touch with me</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <div class="row"> 
+			
+				<div class="col-md-12">     
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;9819475614</p>
+					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
+					
+				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
+				
+				</div>
+			  </div>
+			  <br/>
+			  <div class="row" >  
+			
+			
+			  </div>
+				</br>
+				</br>
+				<div class="col-md-12" style="text-align:center">
+
+                                    
+                                <div style="float:left">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </div>
+          
+                  </div>
+			
+        </form>
+	</div>	
+		</div>
+<div class="container">
+		
+		<button class="open-button" onclick="openForm()">Get in touch with me</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <div class="row"> 
+			
+				<div class="col-md-12">     
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;9819475614</p>
+					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
+					
+				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
+				
+				</div>
+			  </div>
+			  <br/>
+			  <div class="row" >  
+			
+			
+			  </div>
+				</br>
+				</br>
+				<div class="col-md-12" style="text-align:center">
+
+                                    
+                                <div style="float:left">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </div>
+          
+                  </div>
+			
+        </form>
+	</div>	
+</div>
+
+<div class="container-fluid">
+        <div class="visible-xs visible-lg visible-md">
+		<div class="col-xs-12 col-md-12 col-lg-12">
+		<div class="main" id="section1">
+		     <h3 style="text-align:center; font-size:20px; padding-left:40px; margin-left:10px; margin-right:10px; padding-right:10px;"><b>#About me</b></h3>
+			 <p> I am Sreeranjani. I am an aspiring web developer having few months experience in web development field.<br/>I am a self motivaed person and enthusiastic to learn ans excel.I am having excellent written, verbal and analytical skills.I am having ability to work independently and in team</p><br/>
+			 <p>My objective is to seek a position as a web developer in a growth-oriented institution that allows me to,
+showcase my potential and experience for the advancement of the institution. Looking forward
+for an opportunity to serve the institution to the best of their interest by providing all the
+dedication and hard work to achieve the result.
+ </p>
+		</div>
+		</div>
+		</div>
+</div> 
+
+<div class="container-fluid">
+   <div class="main" id="section2">
+	     <h2 style="text-align:center; padding-top:20px;"># Experience</h2>
+		 <ul class="b">
+  <li>Worked as Jr. PHP develeoper & Graphic designer at EventGurus.net,Kochi (December 28,2020 to April 13,2021)</li>
+  
+</ul>
+
+		 
+		 <ul class="a">
+         <li>Made responsive pages using HTML, CSS, BOOTSTRAP, JS, PHP, MYSQL as per client requirement</li>
+         <li>Was also responsible for editing the required images to be uploaded in the website using GIMP, CANVA, Paint, Libre Office</li>
+         <li>Worked on 2-3 projects</li>
+         </ul>
+		 
+		 <br/>
+		 <ul class="b">
+  <li>Internship experience as Wordpress develeoper at SparkPlug Webmedia, Navi Mumbai (February 10,2016 to June 10,2016)</li>
+  
+</ul>
+
+		 
+		 <ul class="a">
+         <li>Had performed duties like installing themes, customizing the web page using various plugins, widgets, HTML & CSS on client website</li>
+         <li>Worked on creating child themes from parent themes using PHP functions,Got exposure on AWS deployment</li>
+         <li>Worked on 3-4 projects	 </li>
+         </ul>
+	</div>
+
+</div>
+
+<div class="container-fluid">
+   <div class="main" id="section3">
+         <h2 style="text-align:center; padding-top:20px;"># Education</h2> 
+
+         <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>University</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MBA -HR (pursuing)</td>
+        <td>IGNOU</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>BE (EXTC)</td>
+        <td>Mumbai University</td>
+        <td>63.8% in BE</td>
+      </tr>
+      <tr>
+        <td>HSC</td>
+        <td>Maharashtra state board </td>
+        <td>69.5%</td>
+      </tr>
+	  <tr>
+        <td>S.S.C. </td>
+        <td>Maharashtra state board </td>
+        <td>86.7%</td>
+      </tr>
+    </tbody>
+  </table>		
+
+        <h2 style="text-align:center; padding-top:20px;"># Certifications</h2> 
+
+         <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Course offered by</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Web Development </td>
+        <td>Internshala</td>
+        
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Internshala</td>
+        
+      </tr>
+      <tr>
+        <td>Advance Graphics and Web Designing</td>
+        <td>IDEMI (A Government of India Society) </td>
+     
+      </tr>
+	  <tr>
+        <td>Digital Marketing  </td>
+        <td>MSME </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>		   
+   </div>
+</div>
+
+<div class="container-fluid">
+   <div class="main" id="section4">
+        <h2 style="text-align:center; padding-top:20px;"># Skills</h2> 
+	
+  <h4>HTML</h4>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"> 
+  </div>
+</div>
+   
+   <h4>CSS</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"> 
+  </div>
+ </div>
+ 
+ <h4>BOOTSTRAP</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:80%"> 
+  </div>
+ </div>
+ 
+ <h4>JavaScript</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:55%"> 
+  </div>
+ </div>
+ 
+ <h4>PHP</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 
+  </div>
+ </div>
+ 
+ <h4>jQuery</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 
+  </div>
+ </div>
+
+<h4>MySQL</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 
+  </div>
+ </div>
+ 
+ <h4>Python</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 
+  </div>
+ </div>
+ 
+ <h4>WordPress</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:65%"> 
+  </div>
+ </div>
+ 
+ 
+ 
+ <h4>Photoshop</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+  </div>
+ </div>
+ 
+ <h4>Coreldraw</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+  </div>
+ </div>
+ 
+ <h4>Illustrator</h4>
+ <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 
+  </div>
+ </div>
+ 
+   
+   </div>
+</div>
+   <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+    	
+    
+	
+	
+    </body>
+	<footer>
+	<div class="container-fluid">
+	<div class="footer1">
+	<p>&#169; All rights reserved.Website developed by Sreeranjani</p>
+	</div>
+	</div>
+	
+	</footer>
+</html>
