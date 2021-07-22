@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<style>
-	
-	/* Button used to open the contact form - fixed at the bottom of the page  */
+<head>
+  <title>Sreeranjani</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body{
+  position:  relative;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .affix{
+  top:0;
+  width:100%;
+  z-index:9999 !important;
+  }
+  
+  .navbar{
+  margin-bottom:0px;
+  }
+  
+  .affix~.container-fluid{
+  position:relative;
+  top:50px;
+  }
+  
+   ul.a {
+  list-style-type: circle;
+  }
+  
+  ul.b {
+  list-style-type: square;
+  font-weight: bold;
+}
+ .footer1{
+  overflow: hidden;
+  position:fixed;
+  width: 100%;
+  bottom:0px;
+  background-color: #ffffff;
+  text-align:center;
+   
+  }
+  
+  /* Button used to open the contact form - fixed at the bottom of the page  */
 .open-button {
   background-color: #337ab7;
   color: white;
@@ -61,18 +92,8 @@ and open the template in the editor.
   background-color: #ddd;
   outline: none;
 }
-	
-	.container{
-	background-color:#ffffff;
-	
-	}
-	
-	#heading1{
-	font-style:italic;
-	font-size:20px;
-	}
-	
-	.open-button{
+  
+  .open-button{
 	background-color: #ff4d4d;
 	color:#ffffff;
 	}
@@ -86,143 +107,86 @@ and open the template in the editor.
   background: #007bb5;
   color: white;}
   
-    #about, #skills, #Experience, #education{
-	background-color:#fffff;
-	border-bottom:1px solid #d3d3d3;
-	
-	
-	}
-    
-	#about:hover, #skills:hover, #Experience:hover, #education:hover{
-	background-color:#d3d3d3;
-	border:1px solid #d3d3d3;
-	}
-	
-	html {
-    scroll-behavior: smooth;
-    }
-	
-	#section1{
-		 border: 1px solid #dedede;
-         height:400px;
-         box-shadow: 5px 5px 5px 5px #dedede;
-		  background-image:linear-gradient(180deg, #000000,#e0ffff );
-		  color:#ffffff;
-		  margin-top:20px;
-		  width:100%;
-        
-	}
-
-	.h3{
-	text-align:center;
-	
-	}
-	
-	.h2{
-	text-align:center;
-	}
-	
-	#section2{
-	     border: 1px solid #dedede;
-		 background-image: linear-gradient(180deg, #e0ffff,#ffffff ); 
-		 box-shadow: 5px 5px 5px 5px #dedede;
-		height:650px;
-	}
-	
-	#section3{
-	     border: 1px solid #dedede;
-		 background-image: linear-gradient(180deg, #ffffff, #e0ffff); 
-		 box-shadow: 5px 5px 5px 5px #dedede;
-		height:650px;
-	}
-	
-	#section4{
-	     border: 1px solid #dedede;
-		 background-image: linear-gradient(180deg, #ffffff, #e0ffff); 
-		 box-shadow: 5px 5px 5px 5px #dedede;
-		height:1000px;
-	}
-	.navbar {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height:50px;
-}
-   
-   ul.a {
-  list-style-type: circle;
+  .navbar{
+background-color:#ffffff;
+color:#000000;
   }
   
-  ul.b {
-  list-style-type: square;
-  font-weight: bold;
+  .a.navbar-brand{
+  background-color:#ffffff;
+color:#000000;
+  }
+ 
+  <!--
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;} 
+   #section1 {padding-top:50px;height:500px;color: #fff; background-image: linear-gradient(180deg, #0078FF, #00C6FF);}-->
+   #section1 {padding-top:50px;height:500px;color: #fff; background-image: linear-gradient(180deg, #C0C0C0, #ffffff);}
+ <!-- #section2 {padding-top:50px;height:650px;color: #fff; background-color: #673ab7;} -->
+   #section2 {padding-top:100px;height:650px;color: #fff; background-image: linear-gradient(to bottom right, #000000,#0078FF, #00C6FF);}
+ <!-- #section3 {padding-top:50px;height:650px;color: #fff; background-color: #ff9800;}-->
+ <!-- #section3 {padding-top:50px;height:650px;color: #000000; background-image: linear-gradient(180deg, #ffffff, #e0ffff); }-->
+   #section3 {padding-top:50px;height:650px;color: #000000; background-image: linear-gradient(to bottom right, #C8C8C8,#D3D3D3, #F0F0F0, #e0ffff); }
+ <!-- #section4 {padding-top:50px;height:1000px;color: #fff; background-color: #00bcd4;}-->
+  #section4 {padding-top:50px;height:1000px;color: #fff; background-image: linear-gradient(180deg,  #A9A9A9,#000000, #000000, #000000, #C8C8C8);}
+
+  #myNavbar a:hover{
+  background-color: #ddd;
+  color: black;
+  }
+  
+  .navbar-brand a:hover{
+   background-color: #ddd;
+  color: black;
+  }
+  
+  .navbar-brand a:onclick{
+   background-color: #ddd;
+  color: black;
+  }
+  
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#ffffff;
 }
   
-  .footer1{
-  overflow: hidden;
-  position:fixed;
-   width: 100%;
-   bottom:0px;
-    background-color: #ffffff;
-	text-align:center;
-   
-  }
-	</style>
-	
-	</head>
-    <body>
-	
-	<div class="container">
-	  
-    </div>
-	
-	<div class="container visible-lg visible-xs">   
-       <div class=col-xs-12>
-	  <div class="navbar">
-        <div id="heading1" style="float:left; font-size:18px; margin-right:450px; color:black;"><b>Sreeranjani &nbsp;</b></div>
-	    <div id="about" style="float:left; font-size:17px; "><a href="#section1" style="color:black;"><b>About Me</b></a> &nbsp; &nbsp;</div> 
-		 <div id="Experience" style="float:left; font-size:17px; "><a href="#section2" style="color:black;"><b>Experience</b></a> &nbsp; &nbsp;</div>
-         <div id="education" style="float:left; font-size:17px; "><a href="#section3" style="color:black;"><b>Education</b></a> &nbsp; &nbsp;</div>
-		 
-		<div id="skills" style="float:left; font-size:17px;"> <a href="#section4" style="color:black;"><b>Skills</b></a> &nbsp; &nbsp;</div>
-	   </div>	   
-    </div>
-	<br/>
-	<button class="open-button" onclick="openForm()">Get in touch with me</button>
-    <div class="form-popup" id="myForm">
-        <form action="" class="form-container">
-            <div class="row"> 
-			
-				<div class="col-md-12">     
-                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;9819475614</p>
-					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
-					
-				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
-				
-				</div>
-			  </div>
-			  <br/>
-			  <div class="row" >  
-			
-			
-			  </div>
-				</br>
-				</br>
-				<div class="col-md-12" style="text-align:center">
+  </style>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-                                    
-                                <div style="float:left">
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                </div>
-          
-                  </div>
-			
-        </form>
-	</div>	
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+	    <div class="container-fluid">
+		    <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#000000; color:#ffffff;>     
+		      <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+     		</button>
+			<a class="navbar-brand" href="#" style="color:#000000; text-align:center;">Sreeranjani</a>
+			</div>
 		</div>
-<div class="container">
+		<div>
+	        <div class="collapse navbar-collapse" id="myNavbar">
+			   <ul class="nav navbar-nav">
+			       <li><a href="#section1">About Me</a></li>
+				   <li><a href="#section2">Experience</a></li>
+				   <li><a href="#section3">Education</a></li>
+				   <li><a href="#section4">Skills</a></li>
+			   </ul>
+			
+			</div>
+			
+		</div>
+	
+	</nav>
+    <div class="container">
 		
 		<button class="open-button" onclick="openForm()">Get in touch with me</button>
     <div class="form-popup" id="myForm">
@@ -230,7 +194,7 @@ and open the template in the editor.
             <div class="row"> 
 			
 				<div class="col-md-12">     
-                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;9819475614</p>
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;+91 1234567890</p>
 					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
 					
 				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
@@ -256,26 +220,115 @@ and open the template in the editor.
         </form>
 	</div>	
 </div>
-
-<div class="container-fluid">
-        <div class="visible-xs visible-lg visible-md">
-		<div class="col-xs-12 col-md-12 col-lg-12">
-		<div class="main" id="section1">
-		     <h3 style="text-align:center; font-size:20px; padding-left:40px; margin-left:10px; margin-right:10px; padding-right:10px;"><b>#About me</b></h3>
+<!--
+       <div id="section1" class="container-fluid">
+	   <h3 style="text-align:center; font-size:20px; padding-left:40px; margin-left:10px; margin-right:10px; padding-right:10px;"><b>#About me</b></h3>
 			 <p> I am Sreeranjani. I am an aspiring web developer having few months experience in web development field.<br/>I am a self motivaed person and enthusiastic to learn ans excel.I am having excellent written, verbal and analytical skills.I am having ability to work independently and in team</p><br/>
 			 <p>My objective is to seek a position as a web developer in a growth-oriented institution that allows me to,
-showcase my potential and experience for the advancement of the institution. Looking forward
+showcase my potential data-rideand experience for the advancement of the institution. Looking forward
 for an opportunity to serve the institution to the best of their interest by providing all the
 dedication and hard work to achieve the result.
  </p>
-		</div>
-		</div>
-		</div>
-</div> 
+	   </div>
+	   -->
 
-<div class="container-fluid">
-   <div class="main" id="section2">
-	     <h2 style="text-align:center; padding-top:20px;"># Experience</h2>
+<!--
+	   <div id="section1" class="container-fluid">
+	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                 <!--Indicators-->
+				 <!--
+				 <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					
+				 </ol>
+				 
+				 <!--Wrapper for slides-->
+	<!--
+				 <div class="carousel-inner" role="listbox">
+				 
+				    <div class="item active">
+					 	
+					</div>
+					
+					<div class="item">
+					    <img src="bg2.png" alt="bg" width="460" height="345">
+					</div>
+				 </div>
+				 
+				 <!--left & right controls-->
+ <!--
+				 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">previous</span>
+				 </a> 
+
+                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">next</span> 
+				 </a>				 
+			</div>			
+	   </div>
+
+-->	   
+
+       <div id="section1" class="container-fluid">
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+       
+		
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+    <!--    <img src="img_chania.jpg" alt="Chania" width="460" height="345"> -->
+        
+        <img src="bg1.png" alt="bgone" width="460" height="345">
+		<div class="centered">
+		<h3 style="text-align:center;"><b>I AM SREERANJANI</b></h3>
+		<p style="text-align:center;"><b>I Am An Aspiring Web Developer</b> </p>
+		</div>
+        <div class="carousel-caption">
+          
+          
+        </div>
+      </div>
+
+      <div class="item">
+  <!--      <img src="img_chania2.jpg" alt="Chania" width="460" height="345"> -->   
+        
+        <img src="bg2.png" alt="bgtwo" width="460" height="345"/>
+		<div class="centered">
+		<h3 style="text-align:center;"><b>About me</b></h3>
+		<p style="text-align:center;">I am an Engineering Graduate having Certification In Web Developement and Python and have few months experience in web development field.</p>
+		</div>
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+        
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>	   
+	   </div>
+ </div>
+	   
+	   
+	   <div id="section2" class="container-fluid">
+	     <h2 style="text-align:center; padding-top:20px;">Experience</h2>
 		 <ul class="b">
   <li>Worked as Jr. PHP develeoper & Graphic designer at EventGurus.net,Kochi (December 28,2020 to April 13,2021)</li>
   
@@ -300,13 +353,45 @@ dedication and hard work to achieve the result.
          <li>Worked on creating child themes from parent themes using PHP functions,Got exposure on AWS deployment</li>
          <li>Worked on 3-4 projects	 </li>
          </ul>
-	</div>
+	   </div>
+	   
+	   
+	        <div class="container-fluid">
+		
+		<button class="open-button" onclick="openForm()">Get in touch with me</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <div class="row"> 
+			
+				<div class="col-md-12">     
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;+1234567890</p>
+					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
+					
+				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
+				
+				</div>
+			  </div>
+			  <br/>
+			  <div class="row" >  
+			
+			
+			  </div>
+				</br>
+				</br>
+				<div class="col-md-12" style="text-align:center">
 
+                                    
+                                <div style="float:left">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </div>
+          
+                  </div>
+			
+        </form>
+	</div>	
 </div>
-
-<div class="container-fluid">
-   <div class="main" id="section3">
-         <h2 style="text-align:center; padding-top:20px;"># Education</h2> 
+	   <div id="section3" class="container-fluid">
+	    <h2 style="text-align:center; padding-top:20px;">Education</h2> 
 
          <table class="table table-hover">
     <thead>
@@ -340,7 +425,7 @@ dedication and hard work to achieve the result.
     </tbody>
   </table>		
 
-        <h2 style="text-align:center; padding-top:20px;"># Certifications</h2> 
+        <h2 style="text-align:center; padding-top:20px;">Certifications</h2> 
 
          <table class="table table-hover">
     <thead>
@@ -372,17 +457,49 @@ dedication and hard work to achieve the result.
         <td></td>
       </tr>
     </tbody>
-  </table>		   
-   </div>
-</div>
+  </table>	
+	   </div>
+	   
+	      <div class="container">
+		
+		<button class="open-button" onclick="openForm()">Get in touch with me</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <div class="row"> 
+			
+				<div class="col-md-12">     
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;+1234567890</p>
+					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
+					
+				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
+				
+				</div>
+			  </div>
+			  <br/>
+			  <div class="row" >  
+			
+			
+			  </div>
+				</br>
+				</br>
+				<div class="col-md-12" style="text-align:center">
 
-<div class="container-fluid">
-   <div class="main" id="section4">
-        <h2 style="text-align:center; padding-top:20px;"># Skills</h2> 
+                                    
+                                <div style="float:left">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </div>
+          
+                  </div>
+			
+        </form>
+	</div>	
+</div>
+	   <div id="section4" class="container-fluid">
+	         <h2 style="text-align:center; padding-top:20px;">Skills</h2> 
 	
   <h4>HTML</h4>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:90%"> 
   </div>
 </div>
    
@@ -450,14 +567,47 @@ dedication and hard work to achieve the result.
  
  <h4>Illustrator</h4>
  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 
   </div>
  </div>
- 
-   
-   </div>
+	   </div>
+	   
+	      <div class="container">
+		
+		<button class="open-button" onclick="openForm()">Get in touch with me</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <div class="row"> 
+			
+				<div class="col-md-12">     
+                    <p><i class="fa fa-mobile-phone" style="font-size:24px"></i> &nbsp;+1234567890</p>
+					<p><i class="fa fa-envelope" style="font-size:13px"></i> &nbsp;matambiranjani111@gmail.com</p>
+					
+				<a href="https://www.linkedin.com/in/sreeranjani-m-534495202/"><i style="font-size:18px" class="fa">&#xf08c;</i> &nbsp;Sreeranjani M</a>
+				
+				</div>
+			  </div>
+			  <br/>
+			  <div class="row" >  
+			
+			
+			  </div>
+				</br>
+				</br>
+				<div class="col-md-12" style="text-align:center">
+
+                                    
+                                <div style="float:left">
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </div>
+          
+                  </div>
+			
+        </form>
+	</div>	
 </div>
-   <script>
+
+<script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -465,15 +615,22 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 </script>
 
 
-    	
-    
-	
-	
-    </body>
-	<footer>
+</body>
+<footer>
 	<div class="container-fluid">
 	<div class="footer1">
 	<p>&#169; All rights reserved.Website developed by Sreeranjani</p>
@@ -481,4 +638,3 @@ function closeForm() {
 	</div>
 	
 	</footer>
-</html>
